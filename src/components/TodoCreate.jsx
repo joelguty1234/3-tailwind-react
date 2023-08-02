@@ -17,11 +17,11 @@ const TodoCreate = ({ createTodo }) => {
   return (
     <form
       onSubmit={handleSumitAddTodo}
-      className="mt-8 flex items-center gap-4 overflow-hidden rounded-md bg-white px-4 py-4"
+      className="dark:bg-gray-800 mt-8 flex items-center gap-4 overflow-hidden rounded-md bg-white px-4 py-4"
     >
       <span className="inline-block h-7 w-7 rounded-full border-2"></span>
       <input
-        className="w-full text-gray-500 outline-none"
+        className="w-full text-gray-500 outline-none dark:bg-gray-800"
         type="text"
         placeholder="Create a new todo..."
         value={title}

@@ -53,8 +53,10 @@ const App = () => {
   return (
     <div
       className="min-h-screen
+      dark:bg-gray-900
       bg-gray-300 
       bg-[url('./assets/images/bg-mobile-light.jpg')] 
+      dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] 
       bg-contain bg-no-repeat"
     >
       <TodoHeader />
@@ -64,7 +66,7 @@ const App = () => {
         <TodoComputed countItemsLeftTodo={countItemsLeftTodo} clearItemsCompletedTodo={clearItemsCompletedTodo} />
         <TodoFilter changeFilter={changeFilter} filter={filter} />
       </main>
-      <footer className="mt-8 px-4 py-4 text-center text-gray-500">
+      <footer className="mt-8 px-4 py-4 text-center text-gray-500 dark:text-gray-400">
         Drag and drop to reorder list
       </footer>
     </div>
