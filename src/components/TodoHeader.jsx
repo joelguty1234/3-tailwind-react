@@ -8,17 +8,15 @@ const TodoHeader = () => {
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark")
-      console.log("mode dark")
       localStorage.theme = "dark"
     } else {
       document.documentElement.classList.remove("dark")
-      console.log("mode light")
       localStorage.theme = "light"
     }
   }, [darkMode])
 
   return (
-    <header className="container mx-auto px-4 pt-8">
+    <header className="container mx-auto px-4 pt-8 md:max-w-xl">
       <div className="flex justify-between">
         <h1 className="text-2xl font-semibold uppercase tracking-[0.3em] text-white">
           Todo
